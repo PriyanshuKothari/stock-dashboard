@@ -65,6 +65,25 @@ docker-compose up --build
 
 
 
+## Development Note
+### Development Approach
+I started by setting up the backend using FastAPI to manage stock data and predictions. For storage, I chose SQLite, and I made sure to include a seeding feature so that the app always begins with a set list of companies. Then, I created several REST endpoints, like /companies, /data/{symbol}, and /predict/{symbol}, to make this information accessible. To wrap it all up, I containerized the backend with Docker and deployed it on Render.Next, I focused on the frontend and built a dashboard using ReactJS. It features a sidebar where users can see company names, a main chart panel for tracking stock trends, and statistic cards that display the 52-week highs and lows along with average volume. Additionally, there's a prediction widget that utilizes a basic linear regression model. For styling, I went with TailwindCSS to create a clean and professional-looking interface. The frontend was deployed on Vercel and linked to the Render backend.
+### Technologies Used
+- Backend: FastAPI, SQLAlchemy, SQLite, Uvicorn, yFinance, Scikit-learn, Docker
+
+- Frontend: ReactJS, Chart.js, TailwindCSS, Vercel
+
+- Deployment: Render (Backend), Vercel (Frontend), GitHub for version control
+### Challenges Faced
+- Handling CORS between backend and frontend deployments
+
+- Managing SQLite persistence in Docker/Render (solved by auto-seeding companies)
+
+- Ensuring clean UI/UX with responsive charts and stats
+
+- Debugging deployment issues on Render (Docker build context, missing DB, etc.)
+
+
 ## Feedback
 
 If you have any feedback, please reach out to us at priyanshukothari1808@gmail.com
