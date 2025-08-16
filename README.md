@@ -48,7 +48,7 @@ docker-compose up --build
 
 
 # 🌍 Deployment
- - Backend: Deploy [[/backend to Render](https://stock-dashboard-backend-e9r7.onrender.com)]
+ - Backend: Deploy [/backend to Render](https://stock-dashboard-backend-e9r7.onrender.com)
 
  - Frontend: Deploy [/frontend to Vercel](https://stock-dashboard-pearl.vercel.app/)
 
