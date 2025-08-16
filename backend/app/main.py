@@ -79,5 +79,5 @@ def predict_next_day(symbol: str) -> Dict[str, Any]:
 
     return {"symbol": symbol, "prediction_next_close": round(pred, 4), "points_used": int(len(y))}
 
-if __name__ == "__main__":
-    uvicorn.run("backend.main:app", host="0.0.0.0", port=8000, reload=True)
+# if __name__ == "__main__":
+#     uvicorn.run("backend.main:app", host="0.0.0.0", port=8000, reload=True)
