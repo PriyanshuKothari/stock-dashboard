@@ -55,13 +55,13 @@ docker-compose up --build
 ## Screenshots
 
 ### Company List
-![Company_List](./screenshots\Company_List.jpeg)
+![Company_List](./screenshots/Company_List.jpeg)
 
 ### Dashboard Overview
-![Dashboard](./screenshots\Dashboard.jpeg)
+![Dashboard](./screenshots/Dashboard.jpeg)
 
 ### Stats & Predictions
-![Stats](./screenshots\Stats.jpeg)
+![Stats](./screenshots/Stats.jpeg)
 
 
 
